@@ -1,0 +1,10 @@
+﻿cff-version: 1.2.0
+message: "If you use this dataset or reproducibility package, please cite it."
+title: "Cross-Platform Ransomware Detection Campaign: A 100-Run Windows-Ubuntu Behavioral Telemetry Dataset"
+type: dataset
+authors:
+  - family-names: "Mughal"
+    given-names: "Muhammad Rashid"
+    affiliation: "Department of Computer Sciences & IT, Faculty of Information Technology, The University of Lahore, Sargodha Campus"
+version: "1.0.0"
+

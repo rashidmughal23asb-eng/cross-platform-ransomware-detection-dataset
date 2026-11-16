@@ -1,0 +1,16 @@
+﻿{
+    "title":  "Cross-Platform Ransomware Detection Campaign: A 100-Run Windows-Ubuntu Behavioral Telemetry Dataset",
+    "author_given":  "Muhammad Rashid",
+    "author_family":  "Mughal",
+    "author_display":  "Muhammad Rashid Mughal",
+    "affiliation":  "Department of Computer Sciences \u0026 IT, Faculty of Information Technology, The University of Lahore, Sargodha Campus",
+    "orcid":  "",
+    "github_repository":  "PENDING",
+    "dataset_doi":  "PENDING",
+    "publication_candidate_created":  "2026-11-16T16:56:15.7583337+05:00",
+    "campaign_root":  "\u003cCAMPAIGN_ROOT\u003e",
+    "official_runs_total":  100,
+    "benign_runs":  60,
+    "ransomware_runs":  40,
+    "release_version":  "1.0.0"
+}

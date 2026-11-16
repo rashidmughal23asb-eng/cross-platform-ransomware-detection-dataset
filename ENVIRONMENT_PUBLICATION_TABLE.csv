@@ -1,0 +1,11 @@
+﻿Component,Publication evidence status,Reported value
+Windows guest,Direct accepted-package evidence,Windows 11
+Ubuntu guest,VM path/name provenance,Ubuntu 24.04 designation
+Windows PowerShell,Production-script dependency/reference,5.1
+Host Python,Qualification receipt,3.12
+Capstone,Qualification receipt,5.0.7
+Sysmon,Collector role proven; exact version absent,NOT RECORDED
+Procmon,Collector role proven; exact version absent,NOT RECORDED
+bpftrace,Collector role proven; exact version absent,NOT RECORDED
+auditd,Collector role proven; exact version absent,NOT RECORDED
+VMware Workstation,Platform proven; exact version absent,NOT RECORDED

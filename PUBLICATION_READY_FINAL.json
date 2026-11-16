@@ -1,0 +1,26 @@
+﻿{
+    "generated":  "2026-11-16T21:08:31.9401052+05:00",
+    "release_version":  "1.0.0",
+    "local_publication_phase":  "CLOSED",
+    "publication_ready_for_upload":  true,
+    "already_published":  false,
+    "official_runs":  100,
+    "ransomware_preflights":  20,
+    "scientific_files":  3498,
+    "scientific_hash_failures":  0,
+    "zenodo_bundles":  8,
+    "zenodo_bundles_created":  true,
+    "zenodo_bundle_membership":  "VERIFIED",
+    "raw_malware_distributed":  false,
+    "hardcoded_secret_gate":  "PASS",
+    "github_repository_url":  "PENDING",
+    "dataset_doi":  "PENDING",
+    "remaining_external_actions":  [
+                                       "Upload/push GitHub repository",
+                                       "Create Zenodo draft",
+                                       "Upload the eight verified TAR bundles and metadata package",
+                                       "Reserve or obtain dataset DOI",
+                                       "Insert GitHub URL and DOI into final metadata",
+                                       "Publish/tag release"
+                                   ]
+}

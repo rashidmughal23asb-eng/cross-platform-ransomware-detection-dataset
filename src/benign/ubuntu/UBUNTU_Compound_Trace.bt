@@ -1,0 +1,43 @@
+BEGIN
+{
+  @tracked[$1] = 1;
+  printf("mono_ns,event,pid,aux_pid,comm,path,path2,bytes\n");
+}
+tracepoint:sched:sched_process_fork
+/@tracked[args.parent_pid]/
+{
+  @tracked[args.child_pid] = 1;
+  printf("%llu,PROCESS_FORK,%d,%d,%s,,,0\n", nsecs, args.parent_pid, args.child_pid, comm);
+}
+tracepoint:sched:sched_process_exec
+/@tracked[pid]/
+{
+  printf("%llu,PROCESS_EXEC,%d,0,%s,%s,,0\n", nsecs, pid, comm, str(args.filename));
+}
+tracepoint:sched:sched_process_exit
+/@tracked[pid]/
+{
+  printf("%llu,PROCESS_EXIT,%d,0,%s,,,0\n", nsecs, pid, comm);
+  delete(@tracked[pid]);
+}
+tracepoint:syscalls:sys_enter_openat
+/@tracked[pid]/
+{
+  printf("%llu,FILE_OPEN,%d,0,%s,%s,,0\n", nsecs, pid, comm, str(args.filename));
+}
+tracepoint:syscalls:sys_enter_unlinkat
+/@tracked[pid]/
+{
+  printf("%llu,FILE_DELETE,%d,0,%s,%s,,0\n", nsecs, pid, comm, str(args.pathname));
+}
+tracepoint:syscalls:sys_enter_renameat2
+/@tracked[pid]/
+{
+  printf("%llu,FILE_RENAME,%d,0,%s,%s,%s,0\n", nsecs, pid, comm, str(args.oldname), str(args.newname));
+}
+tracepoint:syscalls:sys_enter_write
+/@tracked[pid]/
+{
+  printf("%llu,FILE_WRITE,%d,0,%s,,,%llu\n", nsecs, pid, comm, args.count);
+}
+END { clear(@tracked); }

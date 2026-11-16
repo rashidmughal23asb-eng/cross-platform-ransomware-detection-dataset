@@ -1,0 +1,171 @@
+{
+    "schema_version":  "1.0-frozen",
+    "generated_utc":  "2026-11-12T12:07:04.199026Z",
+    "generator":  "APPLY_UBUNTU_SAMPLE_REPLACEMENT.ps1 (2026-11-09 L-R-01-\u003eGunra; 2026-11-12 D-114 L-R-01 Gunra-\u003eConti and L-R-08 BlackBasta-\u003eBlackSuit/Royal applied in place)",
+    "ransomware_manifest_sha256":  "ed97c399ff87e19ecc1d8761ba8a20d7ac44cbf7b7fdfd80a4fcd7ff545d870d",
+    "campaign_manifest_sha256":  "3f9d8ad577af830a87d23486341fb728b06a80902cb3fed2f7f8dd42c64fc843",
+    "ransomware_manifest_before_sha256":  "da3b32d6b2f8b6c4fb4a89f008f1220e0eec00dac7d24b07fae5dd7d0fc49a6e",
+    "campaign_manifest_before_sha256":  "d11544aa48ff25877c88ce05c34199142a6763776e109fd9bb41af9940092c0f",
+    "ransomware_manifest_original_sha256":  "211966fa4a9dbf32013dd1415254f75e0c425194b9a9576ac1abb5e2d79f81da",
+    "campaign_manifest_original_sha256":  "081f472ef334f648d3373687c4b377b0c4f4e0d54c87aab21ecc9482dbd62c7d",
+    "confirmed_by":  "operator (user decision 2026-11-12, Option A)",
+    "confirmed_utc":  "2026-11-12T12:07:04.213345Z",
+    "decision_ref":  "D-044 (L-R-01 -\u003e Gunra, user decision 2026-11-09); preserves 24/8/8 runs, OS balance, zero family leakage; D-043 (canary manifest relocation) applied to RANSOMWARE_Guest_Official.sh; D-114 (2026-11-12, owner-authorised Option A: L-R-01 Gunra -\u003e Conti and L-R-08 BlackBasta -\u003e BlackSuit/Royal, so the official Ubuntu campaign runs exactly the TEN QUALIFIED families; preserves the 24/8/8 runs, the 12/4/4 family split, the 12/12 OS balance and the zero-family-leakage structure; the Ubuntu baseline snapshot moves to the V11 offline snapshot)",
+    "replacements":  [
+                         {
+                             "run_id":  "L-R-03",
+                             "old_family":  "Interlock",
+                             "new_family":  "Hive",
+                             "sample_sha256":  "2e52494e776be6433c89d5853f02b536f7da56e94bbe86ae4cc782f85bed2c4b",
+                             "sample_bytes":  "424264",
+                             "split":  "VALIDATION"
+                         },
+                         {
+                             "run_id":  "L-R-06",
+                             "old_family":  "Trigona",
+                             "new_family":  "Babuk",
+                             "sample_sha256":  "113c3c3aeafbc59615cc23cd47b0cb1f22145ed6d7bfeca283c3fdf4d8076881",
+                             "sample_bytes":  "78104",
+                             "split":  "TEST"
+                         },
+                         {
+                             "run_id":  "L-R-08",
+                             "old_family":  "Akira",
+                             "new_family":  "BlackBasta",
+                             "sample_sha256":  "0d6c3de5aebbbe85939d7588150edf7b7bdc712fceb6a83d79e65b6f79bfc2ef",
+                             "sample_bytes":  "222120",
+                             "split":  "TRAIN"
+                         },
+                         {
+                             "run_id":  "L-R-10",
+                             "old_family":  "BlackSuit/Royal",
+                             "new_family":  "Monti",
+                             "sample_sha256":  "edfe81babf50c2506853fd8375f1be0b7bebbefb2e5e9a33eff95ec23e867de1",
+                             "sample_bytes":  "1529773",
+                             "split":  "TRAIN"
+                         },
+                         {
+                             "run_id":  "L-R-01",
+                             "old_family":  "Qilin/Agenda",
+                             "new_family":  "Gunra",
+                             "sample_sha256":  "5677dfad26045e271272bc98be2fd24e2f6d13737850ab1d9857fd58de05e9f9",
+                             "sample_bytes":  "84512",
+                             "split":  "TEST",
+                             "registry_entry":  "R9C_B rank 1 (Gunra), sample_2 (R4 ELIGIBLE_TIER_A ELF x86-64, tags elf;gunra;ransomware, first_seen 2026-03-04)",
+                             "reason":  "Ubuntu: Qilin/Agenda gated by compile-time unlock password (documented contract from D-042; binary runs but cannot produce a ransomware workload without the password)"
+                         },
+                         {
+                             "run_id":  "L-R-01",
+                             "old_family":  "Gunra",
+                             "new_family":  "Conti",
+                             "sample_sha256":  "8b57e96e90cd95fc2ba421204b482005fe41c28f506730b6148bcef8316a3201",
+                             "sample_bytes":  "36344",
+                             "split":  "TEST",
+                             "decision":  "D-114 (2026-11-12, owner-authorised Option A)",
+                             "guest_path":  "/opt/RansomLab/MalwareStaging/P5G/V10/Samples/8b57e96e90cd95fc2ba421204b482005fe41c28f506730b6148bcef8316a3201.sample",
+                             "mode_octal":  "000",
+                             "qualified":  true
+                         },
+                         {
+                             "run_id":  "L-R-08",
+                             "old_family":  "BlackBasta",
+                             "new_family":  "BlackSuit/Royal",
+                             "sample_sha256":  "b57e5f0c857e807a03770feb4d3aa254d2c4c8c8d9e08687796be30e2093286c",
+                             "sample_bytes":  "2558055",
+                             "split":  "TRAIN",
+                             "decision":  "D-114 (2026-11-12, owner-authorised Option A)",
+                             "guest_path":  "/opt/RansomLab/MalwareStaging/P5G/V10/Samples/b57e5f0c857e807a03770feb4d3aa254d2c4c8c8d9e08687796be30e2093286c.sample",
+                             "mode_octal":  "000",
+                             "qualified":  true
+                         }
+                     ],
+    "split_rule":  {
+                       "train_families":  12,
+                       "validation_families":  4,
+                       "test_families":  4,
+                       "train_runs":  24,
+                       "validation_runs":  8,
+                       "test_runs":  8,
+                       "note":  "Akira no longer cross-OS (Ubuntu Akira replaced); 12 TRAIN families (6 Win + 6 Ubu) preserve 12/12 OS balance without a shared family; D-114: the Ubuntu TRAIN slot L-R-08 now carries BlackSuit/Royal and the Ubuntu TEST slot L-R-01 carries Conti - both from the ten qualified families; the run and family counts, the OS balance and the zero-family-leakage structure are unchanged"
+                   },
+    "expected_duration_seconds":  60,
+    "helper_update_20261109":  {
+                                   "file":  "01_SHARED\\scripts\\host\\RANSOMWARE_CAMPAIGN_PRODUCTION_V1\\ubuntu\\RANSOMWARE_Guest_Official.sh",
+                                   "reason":  "D-043: canary hash manifest moved out of the encryption scope (evidence area -\u003e RUNROOT/work); compat pilot port updated identically",
+                                   "old_sha256":  "6f0cb4d82716d2b578cbf0b9c56f3d8db3281c2f91f7bf88bb9f4db952ff8d08",
+                                   "new_sha256":  "3ef0fc08855e57ab567a90447799e18c6b8008ff95b51647d491d044405889c6",
+                                   "compat_helper_sha256":  "34723c6cf3e318ab71a7f759619bff8c5a1586443c31d80c5b210527d15fecb6"
+                               },
+    "verification":  {
+                         "samples_verified_in_guest_utc":  "2026-11-12T11:16:28.9324934Z",
+                         "samples_verified_in_guest":  10,
+                         "guest_verification_report":  "C:\\Users\\Cyber-01\\Documents\\Default Project\\Ransomware_Thesis_Detection_Campaign_100Runs\\01_SHARED\\sample_selection\\UBUNTU_V11_POST_MATERIALIZATION_FINALIZE_20261112\\UBUNTU_V11_POST_MATERIALIZATION_SNAPSHOT_RECEIPT.json",
+                         "guest_verification_status":  "PASS_V11_10_QUALIFIED_FAMILIES_MATERIALISED_NEW_OFFLINE_SNAPSHOT_CREATED",
+                         "new_snapshot":  "P5G_V11_POST_MATERIALIZATION_PREEXECUTION_UBUNTU_20261112",
+                         "snapshot_created_while_vm_off":  true,
+                         "observed_snapshot_storage_delta_mib":  5.1,
+                         "ransomware_executed":  false,
+                         "official_slots_consumed":  0,
+                         "note":  "D-114: the ten qualified families were verified in the guest (SHA-256, byte count, owner root:root, mode 000) before the offline snapshot; this replaces D-044\u0027s pending Gunra guest verification"
+                     },
+    "windows_d163_refreeze":  {
+                                  "applied_utc":  "2026-11-15T08:19:26.4798579Z",
+                                  "decision_ref":  "D-163 (Windows canary exposure: corpus root C:\\RansomLab\\Canary\\\u003cRUN_ID\u003e_\u003cATTEMPT_ID\u003e, structurally outside the run subtree) + D-164 (RAN_WIN_09_A/B ClearWater -\u003e Nefilim, justified only by the clean 2026-11-15 qualification PASS; new Windows cycle root P5G\\V11\\Samples; the 20 Windows ransomware rows rebound to the new offline baseline P5G_V11_POST_MATERIALIZATION_PREEXECUTION_WINDOWS_20261115 while the 30 executed Windows benign rows stay on P5G_R4_R5_...)",
+                                  "generator":  "01_SHARED\\scripts\\host\\APPLY_WINDOWS_SAMPLE_REPLACEMENT_D163.ps1",
+                                  "confirmed_by":  "owner-authorised 2026-11-15 (D-163 Option A + revised complete sequence); applied by the agent",
+                                  "confirmed_utc":  "2026-11-15T08:19:26.4828517Z",
+                                  "ransomware_manifest_sha256":  "ed97c399ff87e19ecc1d8761ba8a20d7ac44cbf7b7fdfd80a4fcd7ff545d870d",
+                                  "campaign_manifest_sha256":  "3f9d8ad577af830a87d23486341fb728b06a80902cb3fed2f7f8dd42c64fc843",
+                                  "windows_family_target_contracts_sha256":  "8066d93bad1888e51a68df54194ac7894f5d45acfee57db446e4e1bb14156a8c",
+                                  "windows_invocation_contracts_sha256":  "0693f65d32ac8ac07e07d7501149fe42a6edb10632666a8febfb0820c00f0e85",
+                                  "before_sha256":  {
+                                                        "ransomware":  "3f1065c7030b36e86f9f5cf9fa6de8bf533d3b9b4fb96307e02b29f4e563a6e6",
+                                                        "campaign":  "db9dd99fbeaccc24a41fed47a0f933ae14ed2cd5c42b42f0b72a9232d2d9ef53",
+                                                        "windows_family_target_contracts":  "ee4016936cf9bc7d8e8697fc5e33e29ef32002e784d28429bb48e5a5a1c0b7df",
+                                                        "windows_invocation_contracts":  "a7fd234eb927a232caf1a51d75076870d8ed72e1188330398cd7374052bd8a43"
+                                                    },
+                                  "replacements":  [
+                                                       {
+                                                           "run_id":  "W-R-09",
+                                                           "old_family":  "ClearWater",
+                                                           "new_family":  "Nefilim",
+                                                           "old_sample_sha256":  "00202340108c101d59bbfb3daa4bbd6b4436c167e3c9734c07bfbdcb1402f746",
+                                                           "sample_sha256":  "2daa5144081dd288c1dc936ec27b1c8bd709633450ceb73f235fccd1c3d3c62e",
+                                                           "sample_bytes":  "72674",
+                                                           "guest_path":  "C:\\RansomLab\\MalwareStaging\\P5G\\V11\\Samples\\2daa5144081dd288c1dc936ec27b1c8bd709633450ceb73f235fccd1c3d3c62e.sample",
+                                                           "split":  "TRAIN",
+                                                           "image_type":  "EXE",
+                                                           "pe_machine":  "0x014C (PE32 i386)",
+                                                           "justification":  "qualification PASS 2026-11-15 (04_WINDOWS\\RANSOMWARE\\qualification_runs\\RAN_WIN_09_Q_78d3f9abca7f454e_20261115_114851; 51/51 package checks; 0 official slots)"
+                                                       }
+                                                   ],
+                                  "canary_exposure":  {
+                                                          "corpus_root":  "C:\\RansomLab\\Canary\\\u003cRUN_ID\u003e_\u003cATTEMPT_ID\u003e",
+                                                          "hash_manifest":  "C:\\RansomLab\\RansomwareOfficial\\\u003cRUN_ID\u003e\\\u003cATTEMPT_ID\u003e\\Workload\\canary_hashes.json",
+                                                          "corpus_files":  236,
+                                                          "gating":  "NON_GATING_MEASUREMENT_ONLY",
+                                                          "structural_assertions":  [
+                                                                                        "CANARY_ROOT_OUTSIDE_WORK_ROOT",
+                                                                                        "CANARY_ROOT_NOT_THE_FROZEN_EXPOSURE_ROOT",
+                                                                                        "CANARY_MANIFEST_INSIDE_CORPUS_DIRECTORY"
+                                                                                    ]
+                                                      },
+                                  "baseline_rebinding":  {
+                                                             "old":  "P5G_R4_R5_POST_MATERIALIZATION_PREEXECUTION_WINDOWS_20261013",
+                                                             "new":  "P5G_V11_POST_MATERIALIZATION_PREEXECUTION_WINDOWS_20261115",
+                                                             "rows_rebound":  "RAN_WIN_* (20)",
+                                                             "rows_not_rebound":  "BEN_WIN_* (30, already executed on the old baseline; NOT re-interpreted)"
+                                                         },
+                                  "source_manifest_sha256_state":  "SET_TO_ff107300a6f4cda7d0318f7066d7d3fcca19d240b35b357d0bd6993f15f7018f",
+                                  "verification":  {
+                                                       "samples_verified_in_guest_utc":  "2026-11-15T10:11:54.2245300Z",
+                                                       "samples_verified_in_guest":  10,
+                                                       "guest_verification_report":  "01_SHARED\\sample_selection\\WINDOWS_V11_MATERIALIZATION_20261115\\RETRIEVED\\P5G_V11_WINDOWS_AUTHORITY.json",
+                                                       "guest_verification_status":  "PASS",
+                                                       "new_snapshot":  "P5G_V11_POST_MATERIALIZATION_PREEXECUTION_WINDOWS_20261115",
+                                                       "snapshot_created_while_vm_off":  true,
+                                                       "ransomware_executed":  false,
+                                                       "official_slots_consumed":  0
+                                                   }
+                              }
+}

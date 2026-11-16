@@ -1,0 +1,48 @@
+{
+    "schema_version":  "3.0.0-benign-compound-freeze",
+    "generated_utc":  "2026-11-06T06:13:34.3990328Z",
+    "methodology_status":  "FROZEN_2026-11-05",
+    "benign_campaign_protocol":  "FROZEN_2026-11-06",
+    "process_density_invariance_gate":  "FROZEN_2026-11-06",
+    "detector_v2_status":  "UNFROZEN_CONTINUOUS_IMPROVEMENT",
+    "campaign_design":  "15_COMPOUND_SCENARIOS_X_2_REPETITIONS_X_2_OS",
+    "total_runs":  60,
+    "windows_runs":  30,
+    "ubuntu_runs":  30,
+    "train_runs":  36,
+    "validation_runs":  12,
+    "test_runs":  12,
+    "official_benign_runs_completed":  0,
+    "manifest_all_status":  "PENDING",
+    "host_authoritative_execution":  true,
+    "guest_persistence":  "NONE_AFTER_SNAPSHOT_REVERT",
+    "transfer_method":  "NATIVE_VIX_JUST_IN_TIME",
+    "evidence_transfer":  "SEALED_COMPRESSED_ARCHIVE_ONLY",
+    "windows_snapshot":  "P5G_R4_R5_POST_MATERIALIZATION_PREEXECUTION_WINDOWS_20261013",
+    "ubuntu_snapshot":  "P5G_R4_R5_POST_MATERIALIZATION_PREEXECUTION_UBUNTU_20261013",
+    "windows_qualification":  {
+                                  "package":  "BENIGN_QUAL_T003_PATTERN_20261106_V6_RECOVERYFIX",
+                                  "entrypoint_sha256":  "55327f3bef3f3268066fcb094120639723aa8dee0d58a8d9c52c149f0750a64a",
+                                  "package_manifest_sha256":  "d09e418a543f745090210e33f74f8451e34313dd15bba6033cb7493e4a319f47",
+                                  "result":  "BENIGN_QUAL_0913ef2dc59948da_20261106_071618",
+                                  "status":  "PASS"
+                              },
+    "ubuntu_qualification":  {
+                                 "package":  "UBUNTU_BENIGN_QUAL_T003_PATTERN_20261106_V6_TRACE_NL_LOCKRETRY",
+                                 "entrypoint_sha256":  "aeb776b65707587bc23b4342d2f8cd416b8f7c2930a2234ee4ceaae264e9c423",
+                                 "package_manifest_sha256":  "1866362efa51471c05cd89477f28c1ff4d96b32ca330b3097b52f1b46330a0d3",
+                                 "result":  "UBUNTU_BENIGN_QUAL_599e6450f01840ad_20261106_093725",
+                                 "status":  "PASS"
+                             },
+    "primary_feature_contract":  "B_ACTIVITY6_STABILITY",
+    "primary_features":  [
+                             "active_second_ratio",
+                             "peak_event_share",
+                             "latest_second_share",
+                             "recent_three_second_share",
+                             "temporal_entropy",
+                             "longest_active_streak_ratio"
+                         ],
+    "process_density_role":  "DIAGNOSTIC_NOT_PRIMARY_PREDICTOR",
+    "test_policy":  "SCENARIO_SUPERGROUP_LOCKED_UNTOUCHED"
+}

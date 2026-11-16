@@ -1,0 +1,30 @@
+﻿{
+    "generated":  "2026-11-16T20:35:18.3855433+05:00",
+    "release_version":  "1.0.0",
+    "publication_ready_for_upload":  true,
+    "already_published":  false,
+    "official_runs":  100,
+    "ransomware_preflights":  20,
+    "dataset_manifest_files":  3498,
+    "dataset_hash_verified":  3498,
+    "dataset_hash_failures":  0,
+    "github_raw_malware_files":  0,
+    "github_large_files_95mb_plus":  0,
+    "superseded_publication_files":  0,
+    "github_license":  "MIT",
+    "dataset_license":  "CC-BY-4.0",
+    "citation_cff_present":  true,
+    "portability_map_present":  true,
+    "environment_evidence_present":  true,
+    "zenodo_transport_bundles_planned":  8,
+    "github_repository_url":  "PENDING",
+    "dataset_doi":  "PENDING",
+    "next_non_scientific_actions":  [
+                                        "Create/push GitHub repository",
+                                        "Create Zenodo draft",
+                                        "Create eight TAR transport bundles",
+                                        "Reserve or obtain dataset DOI",
+                                        "Insert GitHub URL and DOI into publication metadata",
+                                        "Publish final version"
+                                    ]
+}

@@ -1,0 +1,46 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+
+# OS/editor
+.DS_Store
+Thumbs.db
+*.swp
+*.tmp
+*.bak
+
+# Credentials/secrets
+.env
+.env.*
+*.pem
+*.key
+*credential*
+*credentials*
+*secret*
+*token*
+VirusTotal.txt
+Abuse.ch.txt
+
+# Live malware / archives
+*.sample
+*.exe
+*.dll
+*.scr
+*.com
+*.msi
+*.elf
+*.so
+*.apk
+
+# Large telemetry/evidence: publish through DOI repository, not Git
+*.pml
+*.etl
+*.pcap
+*.pcapng
+capture_archive.*
+official_runs/
+preflight_runs/
+
+# Local publication/audit scratch
+*_AUDIT_*/
+*_CANDIDATE_*/
