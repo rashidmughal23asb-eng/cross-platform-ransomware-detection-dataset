@@ -19,8 +19,6 @@
                                        "Upload/push GitHub repository",
                                        "Create Zenodo draft",
                                        "Upload the eight verified TAR bundles and metadata package",
-                                       "Reserve or obtain dataset DOI",
-                                       "Insert GitHub URL and DOI into final metadata",
                                        "Publish/tag release"
                                    ]
 }

@@ -23,8 +23,6 @@
                                         "Create/push GitHub repository",
                                         "Create Zenodo draft",
                                         "Create eight TAR transport bundles",
-                                        "Reserve or obtain dataset DOI",
-                                        "Insert GitHub URL and DOI into publication metadata",
                                         "Publish final version"
                                     ]
 }
