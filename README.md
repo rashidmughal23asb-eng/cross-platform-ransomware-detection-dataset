@@ -97,9 +97,9 @@ Affiliation: Department of Computer Sciences & IT, Faculty of Information Techno
 
 ## Repository and dataset
 
-GitHub repository: to be assigned before public release.
+GitHub repository: https://github.com/rashidmughal23asb-eng/cross-platform-ransomware-detection-dataset
 
-Dataset DOI: to be assigned after repository deposition.
+Dataset DOI: https://doi.org/10.5281/zenodo.24288523
 
 
 ## Licensing
@@ -129,3 +129,4 @@ Historical internal paths are intentionally unchanged:
 This terminology normalization changes only public-facing labels.
 No scientific evidence, file contents, hashes, or historical provenance
 were altered.
+

@@ -7,4 +7,7 @@ authors:
     given-names: "Muhammad Rashid"
     affiliation: "Department of Computer Sciences & IT, Faculty of Information Technology, The University of Lahore, Sargodha Campus"
 version: "1.0.0"
+doi: "10.5281/zenodo.24288523"
+repository-code: "https://github.com/rashidmughal23asb-eng/cross-platform-ransomware-detection-dataset"
+url: "https://doi.org/10.5281/zenodo.24288523"
 

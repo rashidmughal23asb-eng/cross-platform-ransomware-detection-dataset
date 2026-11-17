@@ -13,8 +13,8 @@
     "zenodo_bundle_membership":  "VERIFIED",
     "raw_malware_distributed":  false,
     "hardcoded_secret_gate":  "PASS",
-    "github_repository_url":  "PENDING",
-    "dataset_doi":  "PENDING",
+    "github_repository_url":  "https://github.com/rashidmughal23asb-eng/cross-platform-ransomware-detection-dataset",
+    "dataset_doi":  "10.5281/zenodo.24288523",
     "remaining_external_actions":  [
                                        "Upload/push GitHub repository",
                                        "Create Zenodo draft",
